@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>@@@---BMI Calculator---@@@</title>
+		<link href="style.css" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+	</head>
+	<body style="background-color:rgb(252, 234, 186);">
+	<img src="BMI_banner.png" style="width:100%; height:auto;">
+	<div class="container-fluid">
+		<div style="color:blueviolet; font-weight:bold; font-size:30px; text-align:center;">คำนวณค่า BMI</div><hr>
+			<form method="POST" action="calculate.php" name="bmi">
+			  <div class="mb-3">
+				<label for="Inputweight" class="form-label">Weight</label>
+				<input type="text" class="form-control" name="weight">
+				<div id="weightHelp" class="form-text">ระบุน้ำหนักเป็นกิโลกรัม</div>
+			  </div>
+			  <div class="mb-3">
+				<label for="Inputheight" class="form-label">Height</label>
+				<input type="text" class="form-control" name="height">
+				<div id="heightHelp" class="form-text">ระบุส่วนสูงเป็นเมตร</div>
+			  </div>
+			<button type="submit" class="btn btn-success">คำนวณ</button>
+			<button type="reset" class="btn btn-danger">ยกเลิก</button>
+			</form>
+	</div>	
+		
+		
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+	</body>
+</html>
